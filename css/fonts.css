@@ -1,0 +1,24 @@
+@font-face {
+  font-family: DM400;
+  src: url(../fonts/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: DM500;
+  src: url(../fonts/DMSans-Medium.ttf);
+}
+@font-face {
+  font-family: DM700;
+  src: url(../fonts/DMSans-Bold.ttf);
+}
+@font-face {
+  font-family: RUB400;
+  src: url(../fonts/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: RUB500;
+  src: url(../fonts/Rubik-Medium.ttf);
+}
+@font-face {
+  font-family: ROB400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}

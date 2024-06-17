@@ -1,0 +1,217 @@
+@media (max-width: 1440px) {
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Центрируем текст */
+    padding: 20px; /* Добавляем отступы для красоты */
+  }
+
+  .header__content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header__content .left,
+  .header__content .right {
+    width: 100%; /* Устанавливаем ширину на 100%, чтобы элементы занимали всю доступную ширину */
+    max-width: 600px; /* Опционально: задаем максимальную ширину для лучшего внешнего вида */
+  }
+  .extra1 .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .met__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer .container {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .sub .container {
+    input {
+      width: 300px;
+      height: 50px;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  button {
+    width: 140px;
+  }
+  .sub .headline {
+    font-size: 24px;
+  }
+  .sub .paragraph {
+    font-size: 14px;
+  }
+  .footer .paragraph {
+    font-size: 14px;
+  }
+  .footer .headline {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .headline {
+    font-size: 27px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+  .extra1 .headline {
+    font-size: 20px;
+    max-width: 300px;
+    text-align: center;
+  }
+  .extra1 .paragraph {
+    font-size: 14px;
+    max-width: 400px;
+  }
+  .header__content h1 {
+    font-size: 28px;
+  }
+  .service__cards .card {
+    width: 270px;
+    height: 237px;
+  }
+  .service__cards .card .headline {
+    font-size: 18px;
+  }
+  .service__cards .card .paragraph {
+    font-size: 14px;
+  }
+  .sub .container {
+    input {
+      width: 230px;
+      height: 50px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .header__content .btns {
+    justify-content: center;
+  }
+  body {
+    margin: 0;
+  }
+  #burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 50px;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+  }
+  #burger-menu span,
+  #burger-menu span:before,
+  #burger-menu span:after {
+    background: #fff;
+    display: block;
+    height: 4px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+  #burger-menu span:before,
+  #burger-menu span:after {
+    content: "";
+  }
+  #burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 16px;
+  }
+  #burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 20px;
+  }
+
+  #burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+  }
+  #burger-menu.close span:after {
+    top: 0px;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+  }
+
+  #menu {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #menu.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 250px;
+    gap: 5px;
+    backdrop-filter: blur(40px);
+    flex-direction: column;
+  }
+
+  #menu li {
+    list-style: none;
+  }
+  #menu a {
+    color: #fff;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .extra1 .paragraph {
+    font-size: 12px;
+    max-width: 300px;
+  }
+}
