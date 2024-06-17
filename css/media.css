@@ -112,6 +112,7 @@
   }
 
   .header__content {
+
   }
 
   .header__content .btns {
@@ -127,7 +128,7 @@
     overflow: visible;
     position: relative;
     z-index: 2;
-  }пше
+  }
   #burger-menu span,
   #burger-menu span:before,
   #burger-menu span:after {
