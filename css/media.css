@@ -111,6 +111,9 @@
     display: block;
   }
 
+  .header__content {
+  }
+
   .header__content .btns {
     justify-content: center;
   }
@@ -121,11 +124,10 @@
     cursor: pointer;
     height: 27px;
     width: 27px;
-    margin: 50px;
     overflow: visible;
     position: relative;
     z-index: 2;
-  }
+  }пше
   #burger-menu span,
   #burger-menu span:before,
   #burger-menu span:after {
