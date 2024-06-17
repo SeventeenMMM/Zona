@@ -1,6 +1,6 @@
-var burgerMenu = document.getElementById("burger-menu");
-var overlay = document.getElementById("menu");
-var body = document.body;
+const burgerMenu = document.getElementById("burger-menu");
+const overlay = document.getElementById("menu");
+const body = document.body;
 
 burgerMenu.addEventListener("click", function () {
   this.classList.toggle("close");
