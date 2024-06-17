@@ -119,6 +119,10 @@
   body {
     margin: 0;
   }
+
+  .header__nav-list {
+    flex-direction: column;
+  }
   #burger-menu {
     cursor: pointer;
     height: 27px;
