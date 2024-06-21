@@ -19,6 +19,28 @@
   margin: 0 auto;
 }
 
+.fade-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+.cards {
+  perspective: 1000px;
+}
+.cards2 {
+  perspective: 1000px;
+  display: flex;
+  gap: 10px;
+}
+
 body {
   background: #1c193c;
   position: relative;
@@ -201,6 +223,7 @@ h1 {
   text-align: center;
 }
 .card {
+  transition: 200ms;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -210,7 +233,7 @@ h1 {
   width: 370px;
   height: 336px;
   box-shadow: 0 22px 18px 0 rgba(0, 0, 0, 0.05);
-  background: rgba(255, 255, 255, 0.079); /* Fallback color */
+  background: rgba(255, 255, 255, 0.079); 
   background: linear-gradient(
     268deg,
     rgba(254, 254, 255, 0.089) 0%,

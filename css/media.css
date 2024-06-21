@@ -4,8 +4,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; /* Центрируем текст */
-    padding: 20px; /* Добавляем отступы для красоты */
+    text-align: center; 
+    padding: 20px; 
   }
 
   .header__content .container {
@@ -18,8 +18,8 @@
 
   .header__content .left,
   .header__content .right {
-    width: 100%; /* Устанавливаем ширину на 100%, чтобы элементы занимали всю доступную ширину */
-    max-width: 600px; /* Опционально: задаем максимальную ширину для лучшего внешнего вида */
+    width: 100%; 
+    max-width: 600px; 
   }
   .extra1 .container {
     flex-direction: column;
@@ -30,6 +30,13 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+@media (max-width: 1280px) {
+  .cards2 {
+    flex-direction: column;
+  }
+  
 }
 
 @media (max-width: 1100px) {
